@@ -2,11 +2,11 @@
 
 Repositório destinado ao TCC do Instituto Social Nossa Senhora de Fátima.
 
-## Objetivo
+Objetivo
 
 Indefinido...
 
-## Equipe
+ Equipe
 
 - [@lehnerdola](https://www.github.com/lehnerdola)
 
