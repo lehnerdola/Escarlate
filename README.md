@@ -1,12 +1,12 @@
-# Escarlate
+<h1> Escarlate <h1/>
 
 Repositório destinado ao TCC do Instituto Social Nossa Senhora de Fátima.
 
-Objetivo
+<h2>Objetivo <h2/>
 
 Indefinido...
 
- Equipe
+<h3> Equipe <h3/>
 
 - [@lehnerdola](https://www.github.com/lehnerdola)
 
