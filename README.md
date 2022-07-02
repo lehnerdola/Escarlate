@@ -15,3 +15,5 @@ Indefinido...
 - [@VitoriaMoon](https://github.com/VitoriaMoon)
 
 - [@GabeSCAR](https://github.com/GabeSCAR)
+
+- [@reapxrsz](https://github.com/reapxrsz)
