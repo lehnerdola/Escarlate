@@ -18,6 +18,7 @@ export default function addArtista() {
 
     const [nome, setNome] = useState('');
     const [descricao, setDescricao] = useState('');
+    const [categorias, setCategorias] = useState('');
     const [artistaImagem, setArtistaImagem] = useState();
     const [Id, setId] = useState(0);
 
@@ -27,7 +28,7 @@ export default function addArtista() {
         try{
             const r = await novoArtista(nome, descricao, artista);
                       await InserirImagemArtista(novoArtista.id, imagem);
-                      setId(novoArtista.id);
+                      setId(novoArtista.Id);
 
             alert('Artista cadastrado!');
 
@@ -90,8 +91,28 @@ export default function addArtista() {
 
             <hr/>
 
-            <div className='addImg' onClick={imagemArtista}>
-            <input type='file' id='img' onChange={e => setArtistaImagem(e.target.files[0])} className='artImg'/>
+            <div className='art'>
+                <h1 className='tit'> Artistas </h1>
+
+                <div className='form'>
+                    <label> Nome do Artista:</label>
+                    <input type="text" placeholder="Nome do Artista" value={nome} onChange={e => setNome(e.target.value)}/>
+                </div>
+
+                <div className='form1'>
+                    <label> Descrição do Artista: </label>
+                    <textarea placeholder="Descrição:" value={descricao} onChange={e => setDescricao(e.target.value)}></textarea>
+                </div>
+
+                <div className='form2'>
+                    <label> Categoria do Artista: </label>
+                    <input type="text" placeholder="Categoria 1:" value={categorias} onChange={e => setCategorias(e.target.value)}/>
+                    <input type="text" placeholder="Categoria 2:" value={categorias} onChange={e => setCategorias(e.target.value)}/>
+                    <input type="text" placeholder="Categoria 3:" value={categorias} onChange={e => setCategorias(e.target.value)}/>
+                </div>
+
+                <div className='addImg' onClick={imagemArtista}>
+                    <input type='file' id='img' onChange={e => setArtistaImagem(e.target.files[0])} className='artImg'/>
                    
                    {imagem &&
                    <img src={mostrarImagemArtista()}/> 
@@ -100,29 +121,10 @@ export default function addArtista() {
                    {!imagem &&
                    <img src={addImagem} width={250}/>
                    }
-            </div>
-
-            <div className='art'>
-                <h1 className='tit'> Artistas </h1>
-
-                <div className='form'>
-                    <label> Nome do Artista:</label>
-                    <input type="text" placeholder="Nome do Artista" />
                 </div>
 
-                <div className='form1'>
-                    <label> Descrição do Artista: </label>
-                    <textarea placeholder="Descrição:"></textarea>
-                </div>
 
-                <div className='form2'>
-                    <label> Categoria do Artista: </label>
-                    <input type="text" placeholder='Categoria 1:'/>
-                    <input type="text" placeholder='Categoria 2:'/>
-                    <input type="text" placeholder='Categoria 3:'/>
-                </div>
-
-                <button className='bt-salvarr'> Salvar </button>
+                <button className='bt-salvarr' onClick={salvarNovoArtista}> Salvar </button>
 
             </div>
         </section>

@@ -12,6 +12,7 @@ import LoginADM from './pages/ADM/Login/loginADM';
 import TelaInicial from './pages/ADM/TelaInicial/index';
 import CadProdutos from './pages/ADM/Produtos/CadProdutos';
 import addArtista from './pages/ADM/Artistas/novoArtista';
+import todosArtistas from './pages/ADM/Artistas/todosArtistas';
 
 export default function Index(){
     return(
@@ -23,7 +24,9 @@ export default function Index(){
     <Route exact path='/LoginADM' element={<LoginADM/>} />
     <Route exact path='/TelaInicial' element={<TelaInicial/>}/>
     <Route exact path='/Produtos' element={<Produtos/>}/>  
-    <Route exact path='/CadProdutos' element={<CadProdutos/>}/>    
+    <Route exact path='/CadProdutos' element={<CadProdutos/>}/>
+    <Route exact path='/Artistas' element={<todosArtistas/>}/>    
+    <Route exact path='/CadArtista' element={<addArtista/>}/>        
   </Routes>
   </BrowserRouter>
   </React.StrictMode>
