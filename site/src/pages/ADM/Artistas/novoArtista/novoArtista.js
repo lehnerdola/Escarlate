@@ -66,26 +66,7 @@ export default function addArtista() {
         <section className='sct'>
 
             <div className='menu'>
-                 <img className='logo' src={logo}/>
-                 <span className='txt'> 
-                    <img className='icon-carrinho' src={iconCarrinho}/>
-                   <h3 className="txt"> Pedidos </h3> 
-                 </span>
-
-                 <span> 
-                    <img className='icon-produtos' src={iconProdutos}/>
-                    <h3 className="txt2"> Produtos </h3>
-                 </span>
-                 
-                 <span> 
-                    <img className='icon-artistas' src={iconArtistas}/>
-                    <h3 className='txt3'> Artistas </h3>
-                 </span>
-                 
-                <span>
-                    <img className='icon-sair' src={iconSair}/>
-                    <Link className="bt-sair" to='/'></Link>
-                </span>
+                <MenuADM/>
                  
             </div>
 
