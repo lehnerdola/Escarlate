@@ -65,7 +65,7 @@ export default function addArtista() {
     return (
         <section className='sct'>
 
-            <div className='menu'>
+            <div className='menuAdm'>
                 <MenuADM/>
                  
             </div>
