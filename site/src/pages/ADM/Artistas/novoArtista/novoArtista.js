@@ -119,7 +119,7 @@ export default function addArtista() {
                    }
 
                    {!imagem &&
-                   <img src={addImagem} width={250}/>
+                   <img src={addImagem} width={260}/>
                    }
                 </div>
 
