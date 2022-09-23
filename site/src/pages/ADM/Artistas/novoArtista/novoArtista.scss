@@ -1,0 +1,75 @@
+.sct {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    background: #030303;
+
+    height: 100vh;
+    width: auto;
+    
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+
+    padding: 2em 2em;
+    margin: 10px 20px;
+}
+
+.logo {
+    position: relative;
+    top: -4.8em;
+    left: -3em;
+}
+
+h3 {
+    font-family: 'Poppins-Regular';
+    font-size: 12px;
+    color: #ffff;
+    letter-spacing: 0.5px;
+ 
+    padding: -2em 2em;
+}
+
+.icon-carrinho, .icon-clientes, .icon-produtos, .icon-artistas, .icon-musicas{
+    width: 2em;
+    height: 1.4em;
+
+    margin-bottom: 0.1em;
+}
+
+.icon-sair {
+
+}
+
+.bt-sair {
+
+}
+
+.bt-sair:hover {
+
+}
+
+.art {
+
+}
+
+.form {
+
+}
+
+.form1 {
+
+}
+
+.form2 {
+
+}
+
+.bt-salvar {
+
+}
