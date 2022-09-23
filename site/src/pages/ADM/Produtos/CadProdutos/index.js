@@ -30,7 +30,7 @@ export default function CadProdutos()
     async function salvar() {
         try {
               
-            const r = cadastrarProduto(IdArtista,nome, tamanho, disponivel, preco, qtd, catSelecionadas);
+            const r = await cadastrarProduto(IdArtista,nome, tamanho, disponivel, preco, qtd, catSelecionadas);
         //  await enviarimagem(novoProduto, imagem);
 
             alert('produto cadastrado')

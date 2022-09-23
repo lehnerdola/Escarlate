@@ -12,8 +12,8 @@ import queen from '../../../assets/images/Queen.jpg';
 import album from '../../../assets/images/Screenshot_20220806-195359-947 3.png';
 import perfil from '../../../assets/images/1659575103611 1.png';
 import produtos from '../../../assets/images/🦆 icon _box seam_.png';
-
 import sair from '../../../assets/images/Vector.png';
+import artista from '../../../assets/images/Queen.png';
 
 export default function TelaInicial(){
 
@@ -53,17 +53,19 @@ export default function TelaInicial(){
             
             <div className='cards-adm'>
                 
-                <CardHome img={queen} nome='Visualizar Artistas' />
                 <CardHome img={album} nome='Visualizar Músicas' />
                 <CardHome img={perfil} nome='Visualizar Clientes'/>
                 <CardHome nome='Visualizar Pedidos'/>
                 <Link to='/Produtos' className='conf-card-produto'>
                 <CardHome img={produtos} nome='Visualizar Produtos'/>
                 </Link> 
+                <Link to='/Artistas' className='conf-card-artista'>
+                <CardHome img={artista} nome='Visualizar Artistas'/>
+                </Link> 
+                
             </div>
             </div>
-           
-          
+        
         </div>
     )
 }

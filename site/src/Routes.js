@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter,Route,Routes,} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import LandingPage from './pages/LP/LandingPage';
 import Login from './pages/Login e Cadastro/Login';
@@ -11,6 +11,7 @@ import Produtos from './pages/ADM/Produtos/TodosProdutos';
 import LoginADM from './pages/ADM/Login/loginADM';
 import TelaInicial from './pages/ADM/TelaInicial/index';
 import CadProdutos from './pages/ADM/Produtos/CadProdutos';
+import addArtista from './pages/ADM/Artistas/novoArtista';
 
 export default function Index(){
     return(
